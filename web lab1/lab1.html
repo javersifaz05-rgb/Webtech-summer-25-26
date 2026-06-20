@@ -2,10 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bank Account Registration</title>
 </head>
 <body>
-    
+
+    <!-- ক্লাসের নিয়মানুযায়ী মাদার বক্স বা কন্টেইনার ডিক্লেয়ারেশন -->
+    <div class="container">
+        <form action="#" method="POST">
+            
+            <!-- প্রথম সেকশন: ব্যাংক অ্যাকাউন্ট ইনফরমেশন -->
+            <fieldset>
+                <legend>Bank Account Registration</legend>
+                <table>
+                    <!-- Account Name -->
+                    <tr>
+                        <td><label for="acc-name">Account Name:</label></td>
+                        <td><input type="text" id="acc-name" name="account_name" required></td>
+                    </tr>
+                    
+                    <!-- Account Phone -->
+                    <tr>
+                        <td><label for="acc-phone">Account Phone:</label></td>
+                        <td><input type="tel" id="acc-phone" name="account_phone" required></td>
+                    </tr>
+                    
+                    <!-- Account Email -->
+                    <tr>
+                        <td><label for="acc-email">Account Email:</label></td>
+                        <td><input type="email" id="acc-email" name="account_email" required></td>
+                    </tr>
+                    
+                    <!-- Account Address -->
+                    <tr>
+                        <td><label for="acc-address">Account Address:</label></td>
+                        <td><textarea id="acc-address" name="account_address" rows="3" placeholder="Enter your full address"></textarea></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <!-- দ্বিতীয় সেকশন: আলাদা বক্সে পার্সোনাল ইনফো -->
+            <fieldset>
+                <legend>Personal Account Information Info</legend>
+                <table>
+                    <!-- Username -->
+                    <tr>
+                        <td><label for="username">Username:</label></td>
+                        <td><input type="text" id="username" name="username" required></td>
+                    </tr>
+                    
+                    <!-- Password -->
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password" required></td>
+                    </tr>
+                    
+                    <!-- Confirm Password -->
+                    <tr>
+                        <td><label for="confirm-password">Confirm Password:</label></td>
+                        <td><input type="password" id="confirm-password" name="confirm_password" required></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <!-- সাবমিট বাটন -->
+            <br>
+            <input type="submit" value="Register Account">
+
+        </form>
+    </div>
+
 </body>
 </html>
