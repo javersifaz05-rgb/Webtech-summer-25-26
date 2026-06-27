@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Bank Account Registration</title>
+    <title>User Registation Account </title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  
-    
     <div class="container">
-        <form action="#" method="POST">
-            
-           
+        <form>
+
             <fieldset>
-                <legend>Bank Account Registration</legend>
+                <legend>User Registration Form</legend>
                 <table>
-                    <h1 style="color: red;">bank account registation</h1>
-                    
                     <tr>
-                        <td><label for="acc-name">Account Name:</label></td>
+                        <td><label for="name"> Name <span class="required">*</span></label></td>
                         <td><input type="text" id="acc-name" name="account_name" required></td>
                     </tr>
-                    
-                    
                     <tr>
-                        <td><label for="acc-phone">Account Phone:</label></td>
-                        <td><input type="tel" id="acc-phone" name="account_phone" required></td>
+                        <td><label for="phone"> Phone <span class="required">*</span></label></td>
+                        <td><input type="tel" id="phone" name="account_phone" required></td>
                     </tr>
-                    
-                 
                     <tr>
-                        <td><label for="acc-email">Account Email:</label></td>
+                        <td><label for="acc-email">Email <span class="required">*</span></label></td>
                         <td><input type="email" id="acc-email" name="account_email" required></td>
                     </tr>
-                    
-                    
                     <tr>
-                        <td><label for="acc-address">Account Address:</label></td>
-                        <td><textarea id="acc-address" name="account_address" rows="3" placeholder="Enter your full address"></textarea></td>
+                        <td><label for="acc-address"> Address <span class="required">*</span></label></td>
+                        <td><textarea id="acc-address" name="account_address" placeholder="Enter your full address"
+                                required></textarea></td>
                     </tr>
-                </table>
+
+                    <tr>
+                        <td><label>Account Type <span class="required">*</span></label></td>
+                        <td>
+                            <input type="radio" id="savings" name="acc_type" value="savings" required>
+                            <label for="savings">Savings</label>
+
+                            <input type="radio" id="current" name="acc_type" value="current" required>
+                            <label for="current">Current</label>
+                        </td>
+                    </tr>A
             </fieldset>
 
-          
             <fieldset>
-                <legend>Personal Account Information Info</legend>
+                <legend> Information Info</legend>
                 <table>
-                    <!-- Username -->
                     <tr>
-                        <td><label for="username">Username:</label></td>
+                        <td><label for="username">Username <span class="required">*</span></label></td>
                         <td><input type="text" id="username" name="username" required></td>
                     </tr>
-                    
-                   
                     <tr>
-                        <td><label for="password">Password:</label></td>
+                        <td><label for="password">Password <span class="required">*</span></label></td>
                         <td><input type="password" id="password" name="password" required></td>
                     </tr>
-                    
-                   
                     <tr>
-                        <td><label for="confirm-password">Confirm Password:</label></td>
+                        <td><label for="confirm-password">Confirm Password <span class="required">*</span></label></td>
                         <td><input type="password" id="confirm-password" name="confirm_password" required></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the Terms and Conditions <span
+                                    class="required">*</span></label>
+                        </td>
                     </tr>
                 </table>
             </fieldset>
 
-           
             <br>
             <input type="submit" value="Register Account">
 
@@ -74,4 +78,5 @@
     </div>
 
 </body>
+
 </html>

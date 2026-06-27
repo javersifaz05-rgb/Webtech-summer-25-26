@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bank Account Registration Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <form>
+            
+            <fieldset>
+                <legend>Bank Account Registration</legend>
+                <table>
+                    <tr>
+                        <td><label for="acc-name">Account Name <span class="required">*</span></label></td>
+                        <td><input type="text" id="acc-name" name="account_name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="acc-phone">Account Phone <span class="required">*</span></label></td>
+                        <td><input type="tel" id="acc-phone" name="account_phone" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="acc-email">Account Email <span class="required">*</span></label></td>
+                        <td><input type="email" id="acc-email" name="account_email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="acc-address">Account Address <span class="required">*</span></label></td>
+                        <td><textarea id="acc-address" name="account_address" placeholder="Enter your full address" required></textarea></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Account Information Infomation</legend>
+                <table>
+                    <tr>
+                        <td><label for="username">Username <span class="required">*</span></label></td>
+                        <td><input type="text" id="username" name="username" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password <span class="required">*</span></label></td>
+                        <td><input type="password" id="password" name="password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="confirm-password">Confirm Password <span class="required">*</span></label></td>
+                        <td><input type="password" id="confirm-password" name="confirm_password" required></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <br>
+            <input type="submit" value="Register Account">
+
+        </form>
+    </div>
+
+</body>
+</html>
